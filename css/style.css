@@ -1,0 +1,53 @@
+body {
+    margin: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+.jana-img {
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+    color: #230c33;
+    background-color: #858ae3;
+    border-bottom: 8px solid #4e148c;
+    border-left: 8px double #613dc1;
+    border-top-right-radius: 50px;
+}
+
+.hover:hover {
+    text-shadow: 2px 2px 5px #4e148c;
+}
+
+.jana-img:hover {
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+    0% {
+        transform: none;
+        box-shadow: 0 0 10px rgb(0, 255, 170);
+        rotate: 10deg;
+        border-radius: 10px 20px 10px 20px;
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgb(0, 255, 170);
+        rotate: -10deg;
+        border-radius: 20px 10px 20px 10px;
+    }
+    100% {
+        transform: none;
+        box-shadow: 0 0 10px rgb(0, 255, 170);
+        rotate: 10deg;
+        border-radius: 10px 20px 10px 20px;
+    }
+}
